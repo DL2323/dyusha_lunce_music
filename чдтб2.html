@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дюша Лунце</title>
+    <style>
+        /* Общие стили для всего сайта */
+        body {
+            background-image: url('image_11.png'); /* Убедись, что файл изображения существует */
+            background-size: cover; /* изображение растягивается на весь экран */
+            background-position: center center; /* выравнивание изображения по центру */
+            background-attachment: fixed; /* фон будет фиксированным при прокрутке */
+            color: white; /* белый цвет текста */
+            font-family: Arial, sans-serif; /* шрифт для текста */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .cover {
+            width: 300px; /* Размер обложки */
+            height: 300px; /* Высота обложки */
+            border-radius: 50%; /* Делаем её круглой */
+            background-image: url('cover_чем_дальше_тем_ближе_2.png'); /* Используй правильный путь */
+            background-size: cover; /* Изображение покрывает всю область */
+            background-position: center; /* Центрируем изображение */
+            margin: 100px auto; /* Центрируем обложку на странице с отступом сверху */
+            animation: spin 20s linear infinite; /* Анимация вращения */
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg); /* Начинаем с 0 градусов */
+            }
+            to {
+                transform: rotate(360deg); /* Крутим до 360 градусов */
+            }
+        }
+
+        /* Стили для аудио (скрытие плеера) */
+        audio {
+            display: none; /* Этот стиль скрывает плеер */
+        }
+
+        /* Стили для навигационного меню */
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Дюша Лунце</h1>
+    <h2> чем дальше, тем ближе (альбом, 2024)</h2>
+    
+    <!-- Навигационное меню -->
+    <nav>
+        <a href="#songs">Тексты</a>
+        <a href="#socials">Где искать</a>
+        <a href="#gallery">Вы и я</a>
+    </nav>
+
+    <!-- Обложка -->
+    <div class="cover"></div>
+
+    <!-- Вставка аудио с автозапуском и скрытым плеером -->
+    <audio autoplay>
+        <source src="чем_дальше_финал.wav" type="audio/wav">
+        Ваш браузер не поддерживает элемент <code>audio</code>.
+    </audio>
+</body>
+</html>

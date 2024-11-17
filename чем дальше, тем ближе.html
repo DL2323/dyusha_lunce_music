@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дюша Лунце</title>
+    <style>
+        /* Общие стили для всего сайта */
+        body {
+            background-image: url('image 11.png'); /* замените 'background.jpg' на путь к вашей картинке */
+            background-size: cover; /* изображение растягивается на весь экран */
+            background-position: center center; /* выравнивание изображения по центру */
+            background-attachment: fixed; /* фон будет фиксированным при прокрутке */
+            color: white; /* белый цвет текста */
+            font-family: Arial, sans-serif; /* шрифт для текста */
+            margin: 0;
+            padding: 0;
+            text-align: center;}
+        .cover {
+    width: 300px; /* Размер обложки */
+    height: 300px; /* Высота обложки */
+    border-radius: 50%; /* Делаем её круглой */
+    background-image: url('обложка чем дальше, тем ближе 2.png'); /* Замените на путь к вашей обложке */
+    background-size: cover; /* Изображение покрывает всю область */
+    background-position: center; /* Центрируем изображение */
+    margin: 100px auto; /* Центрируем обложку на странице с отступом сверху */
+    animation: spin 20s linear infinite; /* Анимация вращения */}
+    @keyframes spin {
+    from {
+        transform: rotate(0deg); /* Начинаем с 0 градусов */
+    }
+    to {
+        transform: rotate(360deg); /* Крутим до 360 градусов */
+    }
+    
+}
+audio {
+    display: none; /* Этот стиль скрывает плеер */ }
+ </style>
+</head>
+<body>
+   <h1> Дюша Лунце</h1> 
+   <h2> чем дальше, тем ближе (альбом, 2024) </h2>
+   <nav> <a href=#songs> тексты </a> </nav>
+   <a href="#socials">где искать</a>
+   <a href="#gallery">вы и я</a>
+   <div class="cover"></div>
+   <audio autoplay>
+    <source src="чем_дальше_финал.wav" type="audio/wav">
+   </source>
+    Ваш браузер не поддерживает элемент <code>audio</code>.
+</audio autoplay>
